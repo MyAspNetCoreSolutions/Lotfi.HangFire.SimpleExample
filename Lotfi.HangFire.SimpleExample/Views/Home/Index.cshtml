@@ -1,0 +1,23 @@
+﻿@model List<Lotfi.HangFire.SimpleExample.Model.myDate>
+<h2>Index</h2>
+
+<table style="border:1px">
+    <tr>
+        <th>ID</th>
+        <th>Date</th>
+    </tr>
+        @foreach (var item in Model)
+    {
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.Date</td>
+    </tr>
+}
+</table>
+
+<br />
+<br />
+<br />
+<hr />
+<br />
+<a asp-action="StartJob" asp-controller="Home">ثبت جاب</a>
